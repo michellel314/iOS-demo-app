@@ -10,10 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "flag")
+            Image(systemName: "paintbrush.fill")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Fun with Git!")
+            Text("RGB")
+            ScrollView(.horizontal, showsIndicators: false){
+                HStack{
+                    Rectangle()
+                        .foregroundStyle(.red)
+                        .frame(width: 150, height: 150)
+                    Rectangle()
+                        .foregroundStyle(.blue)
+                        .frame(width: 150, height: 150)
+                    Rectangle()
+                        .foregroundStyle(.green)
+                        .frame(width: 150, height: 150)
+                }
+            }
+            
         }
         .padding()
     }

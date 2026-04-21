@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SampleView: View {
     var body: some View {
-        Text("Look at this sample view")
+        Circle()
+            .foregroundStyle(.tint)
     }
 }
 
