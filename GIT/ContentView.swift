@@ -14,6 +14,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("RGB")
+            Text("LOOK AT THESE SQUARES MAN")
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
                     Rectangle()
@@ -27,6 +28,9 @@ struct ContentView: View {
                         .frame(width: 150, height: 150)
                 }
             }
+            Image(systemName: "pencil.and.scribble")
+                .resizable()
+                .frame(width: 100, height: 100)
             
         }
         .padding()
