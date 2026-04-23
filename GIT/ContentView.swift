@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Placeholder, this will be the front/first page")
+        TabView{
+            Tab("Hi", systemImage: "person.circle"){
+                Feature()
+            }
+            Tab("It's", systemImage: "rectangle.and.pencil.and.ellipsis"){
+                SecondView()
+            }
+        }
     }
 }
 
